@@ -1,44 +1,73 @@
+$icons: ('Office', 'Word', 'Excel', 'PowerPoint', 'Outlook', 'OneDrive', 'OneNote', 'ToDo', 'Calendar', 'Skype');
+$dots: ('Nine_Dots', 'Three_Dots');
+
 * {
   margin: 0;
   padding: 0;
 }
+
+li{
+  list-style:none;
+  margin: 0;
+  padding: 0;
+  color: transparent;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  transition: all 0.2s linear;
+  &:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}
+
 body {
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: ivory;
+  margin-top: 100px;
 }
-.line {
-  width: 100vw;
-}
-.left, .right {
-  width: 50vw;
+
+.home {
   overflow: hidden;
-  display: inline-block;
+  position: relative;
+  //image-rendering: -webkit-optimize-contrast;
+  background-image: url('../imgs/wallpapers/edge_image.jpg');
+  background-size: cover;
+  width: 1500px;
+  height: 750px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px 10px grey;
 }
-.left {
-  color:skyblue;
-  transform: skew(0deg, -15deg);
+
+.leftRail {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.09);
+  background-color: #f7f7f7;
+  height: 750px;
+  width: 4%;
+  transition: width 0.1s linear 0s;
+  
+  @each $icon in $icons{
+    .#{$icon}{background-image: url('../imgs/icons/#{$icon}.svg');}
+  };
+
+  @each $dot in $dots{
+    .#{$dot}{background-image: url('../imgs/icons/#{$dot}.png');}
+  }
 }
-.right {
-  color: black;
-  transform: skew(0deg, 15deg);
-}
-.left .content {
-  width: 100vw;
-  text-align: center;
-}
-.right .content {
-  width: 100vw;
-  text-align: center;
-  transform: translate(-50vw);
-}
-span {
-  display: inline-block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 10vw;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: .8;
-  transition: ease-out .6s;
+
+.backgroundImageOverlay{
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), radial-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.3) 166%);
+  width: 96%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
