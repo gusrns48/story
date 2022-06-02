@@ -1,15 +1,26 @@
 {
   "files": {
-    "main.css": "/story/static/css/main.63a8391a.css",
-    "main.js": "/story/static/js/main.e9e78ebc.js",
+    "main.css": "/story/static/css/main.0136116f.css",
+    "main.js": "/story/static/js/main.4cbbaf34.js",
     "static/js/787.b5daa3be.chunk.js": "/story/static/js/787.b5daa3be.chunk.js",
+    "static/media/edge_image.jpg": "/story/static/media/edge_image.be361ffeb5e64ba456b3.jpg",
+    "static/media/Outlook.svg": "/story/static/media/Outlook.1875bc88b034c27ed380.svg",
+    "static/media/Office.svg": "/story/static/media/Office.5cd06ab49a8f8444ded2.svg",
+    "static/media/Skype.svg": "/story/static/media/Skype.dffa7ff8f56f25dd05bc.svg",
+    "static/media/PowerPoint.svg": "/story/static/media/PowerPoint.338f3299456512af3ce7.svg",
+    "static/media/Excel.svg": "/story/static/media/Excel.b188b23bc9085cfe86e1.svg",
+    "static/media/OneNote.svg": "/story/static/media/OneNote.7f9b50cbba5688231b94.svg",
+    "static/media/Word.svg": "/story/static/media/Word.1d8abc0bd68c09676d43.svg",
+    "static/media/Calendar.svg": "/story/static/media/Calendar.fed43e09f9b3c8d367ac.svg",
+    "static/media/OneDrive.svg": "/story/static/media/OneDrive.0699bff07ba089f72bfe.svg",
     "index.html": "/story/index.html",
-    "main.63a8391a.css.map": "/story/static/css/main.63a8391a.css.map",
-    "main.e9e78ebc.js.map": "/story/static/js/main.e9e78ebc.js.map",
+    "static/media/ToDo.svg": "/story/static/media/ToDo.54421277f0d8d1cda546.svg",
+    "main.0136116f.css.map": "/story/static/css/main.0136116f.css.map",
+    "main.4cbbaf34.js.map": "/story/static/js/main.4cbbaf34.js.map",
     "787.b5daa3be.chunk.js.map": "/story/static/js/787.b5daa3be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63a8391a.css",
-    "static/js/main.e9e78ebc.js"
+    "static/css/main.0136116f.css",
+    "static/js/main.4cbbaf34.js"
   ]
 }
