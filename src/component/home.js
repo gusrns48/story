@@ -10,12 +10,19 @@ const Home = () => {
   return(
     <section className='home'>
       <div className='leftRail'>
-        <li className='Nine_Dots'></li>
-        {icons.map(icons =>
-          <li className={icons}></li>  
+        <li className='nineDots'></li>
+        {icons.map((icons,index) =>
+          <li className={icons} key={index}></li>  
         )}
-        <li className='Three_Dots'></li>
+        <li className='threeDots'></li>
       </div>
+      <div className="highBar">
+        <li className='welcome'>웹 검색</li>
+        <li className='voice'></li>
+        <li className='search'></li>
+      </div>
+
+
       <div className='backgroundImageOverlay'></div>
     </section>
   )
