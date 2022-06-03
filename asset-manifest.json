@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/story/static/css/main.0136116f.css",
-    "main.js": "/story/static/js/main.4cbbaf34.js",
+    "main.css": "/story/static/css/main.512677a5.css",
+    "main.js": "/story/static/js/main.2677c4f0.js",
     "static/js/787.b5daa3be.chunk.js": "/story/static/js/787.b5daa3be.chunk.js",
     "static/media/edge_image.jpg": "/story/static/media/edge_image.be361ffeb5e64ba456b3.jpg",
     "static/media/Outlook.svg": "/story/static/media/Outlook.1875bc88b034c27ed380.svg",
@@ -12,15 +12,16 @@
     "static/media/OneNote.svg": "/story/static/media/OneNote.7f9b50cbba5688231b94.svg",
     "static/media/Word.svg": "/story/static/media/Word.1d8abc0bd68c09676d43.svg",
     "static/media/Calendar.svg": "/story/static/media/Calendar.fed43e09f9b3c8d367ac.svg",
+    "static/media/test.PNG": "/story/static/media/test.4893c37c87a2eb90bd2b.PNG",
     "static/media/OneDrive.svg": "/story/static/media/OneDrive.0699bff07ba089f72bfe.svg",
     "index.html": "/story/index.html",
     "static/media/ToDo.svg": "/story/static/media/ToDo.54421277f0d8d1cda546.svg",
-    "main.0136116f.css.map": "/story/static/css/main.0136116f.css.map",
-    "main.4cbbaf34.js.map": "/story/static/js/main.4cbbaf34.js.map",
+    "main.512677a5.css.map": "/story/static/css/main.512677a5.css.map",
+    "main.2677c4f0.js.map": "/story/static/js/main.2677c4f0.js.map",
     "787.b5daa3be.chunk.js.map": "/story/static/js/787.b5daa3be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0136116f.css",
-    "static/js/main.4cbbaf34.js"
+    "static/css/main.512677a5.css",
+    "static/js/main.2677c4f0.js"
   ]
 }
