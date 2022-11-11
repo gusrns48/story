@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import {Link} from "react-router-dom";
 import '../style/home.scss'
 const left_icons = ['Office', 'Word', 'Excel', 'PowerPoint', 'Outlook', 'OneDrive', 'OneNote', 'ToDo', 'Calendar', 'Skype'];
-const middle_icons = ['Office', 'Word', 'Excel', 'PowerPoint', 'Outlook', 'OneDrive', 'OneNote', 'ToDo', 'Calendar', 'Skype'];
+const middle_icons = ['Office', 'Word', 'Excel', 'PowerPoint', 'Outlook', 'OneDrive', 'OneNote', 'ToDo'];
 
 const Home = () => {
   useEffect(()=>{
@@ -10,20 +10,19 @@ const Home = () => {
 
   return(
     <section className='home'>
-      <div className='leftRail'>
-        <li className='nineDots'></li>
+      <div className='left-rail'>
+        <li className='nine-dots'></li>
         {left_icons.map((left_icons,index) =>
           <Link to='/about' className={left_icons} key={index}></Link>  
         )}
-        <li className='threeDots'></li>
+        <li className='three-dots'></li>
       </div>
-      <div className="highBar">
+      <div className="high-bar">
         <input type="text" className='select-box' placeholder='웹 검색'/>
-        {/* <li className='welcome'>웹 검색</li> */}
         <li className='voice'></li>
         <li className='search'></li>
       </div>
-      <div className='middleBar'>
+      <div className='middle-bar'>
         {middle_icons.map((middle_icons,index) =>
         <li>
           <div className='content-container'>
@@ -34,7 +33,7 @@ const Home = () => {
       </div>
 
 
-      <div className='backgroundImageOverlay'></div>
+      <div className='background-image-overlay'></div>
     </section>
   )
 }
