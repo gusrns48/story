@@ -1,8 +1,9 @@
-import { useEffect } from 'react'
-import {Link} from "react-router-dom";
-import '../style/home.scss'
+import { useState, useEffect } from 'react'
+import { Link } from "react-router-dom";
+import 'style/home.scss'
 const left_icons = ['Office', 'Word', 'Excel', 'PowerPoint', 'Outlook', 'OneDrive', 'OneNote', 'ToDo', 'Calendar', 'Skype'];
-const middle_icons = ['Office', 'Word', 'Excel', 'PowerPoint', 'Outlook', 'OneDrive', 'OneNote', 'ToDo'];
+const middle_icons = ['Office', 'Word', 'Excel'];
+const bottom_icons = ['Office', 'Word', 'Excel', 'PowerPoint', 'Outlook', 'OneDrive', 'OneNote', 'ToDo', 'OneNote', 'ToDo', 'OneNote', 'ToDo'];
 
 const Home = () => {
   useEffect(()=>{
@@ -13,7 +14,7 @@ const Home = () => {
       <div className='left-rail'>
         <li className='nine-dots'></li>
         {left_icons.map((left_icons,index) =>
-          <Link to='/about' className={left_icons} key={index}></Link>  
+          <Link to='/about'><li className={left_icons} key={index}></li></Link>
         )}
         <li className='three-dots'></li>
       </div>
@@ -22,14 +23,19 @@ const Home = () => {
         <li className='voice'></li>
         <li className='search'></li>
       </div>
-      <div className='middle-bar'>
-        {middle_icons.map((middle_icons,index) =>
-        <li>
-          <div className='content-container'>
-            <span className={middle_icons} key={index}></span>
-          </div>
-        </li>
-        )}
+      <div className="middle-bar">
+        <div className="profile"></div>
+        <div className="category"></div>
+        <div className="guest-book"></div>
+      </div>
+      <div className='bottom-bar'>
+        <ul>
+          {bottom_icons.map((middle_icons,index) =>
+            <li className='content-container'>
+              <span className={middle_icons} key={index}></span>
+            </li>
+          )}
+        </ul>
       </div>
 
 
